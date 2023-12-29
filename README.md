@@ -1,35 +1,29 @@
-# TI-nspire CX II-T CRC Encoder und Decoder
+# TI-nspire CX II-T CRC Encoder and Decoder
 
-Dieses Repository enthält Python-Skripte zur Durchführung der CRC (Cyclic Redundancy Check)-Kodierung und -Dekodierung, optimiert für den TI-nspire CX II-T Taschenrechner.
+This repository contains Python scripts for performing CRC (Cyclic Redundancy Check) encoding and decoding, optimized for the TI-nspire CX II-T calculator.
 
 ## CRC Encoder
 
-`crcEncoder.py` führt eine CRC-Kodierung auf binären Daten durch. Es dividiert die Daten durch ein Generatorpolynom und fügt die resultierende CRC-Prüfsumme an die Originaldaten an.
+`crcEncoder.py` performs CRC encoding on binary data. It divides the data by a generator polynomial and appends the resulting CRC checksum to the original data.
 
-## Detaillierte Ausgabe der Berechnung
+### Customization
 
-Das Skript `crcEncoder.py` gibt nicht nur den Transmitted Value aus, sondern zeigt auch den gesamten Lösungsweg der binären Polynomdivision. Dies umfasst jeden Schritt der Division, die XOR-Operationen und den berechneten Rest. Diese detaillierte Ausgabe hilft dabei, den Prozess der CRC-Kodierung besser zu verstehen und zu verfolgen.
+- Change `val1` for the data to be encoded.
+- Change `val2` for the generator polynomial.
 
-### Anpassung
-
-- Ändern Sie `val1` für die zu kodierenden Daten.
-- Ändern Sie `val2` für das Generatorpolynom.
-
-### Beispiel
+### Example
 
 ```python
-val1 = "011000100101" # Ihre Daten
-val2 = "10011"       # Ihr Generatorpolynom
-```
+val1 = "011000100101" # Your data
+val2 = "10011"       # Your generator polynomial
+CRC Decoder
+crcDecoder.py is used to verify the integrity of the received data.
 
-## CRC Decoder
+## Use on TI-nspire CX CAS
+Download the .py and .tns files from the repository.
+Transfer these files to your calculator using the TI-nspire CX CAS Student Software.
+Open the files on the calculator to run the scripts.
+For more details on the use and customization of the scripts, see the comments in the code.
 
-`crcDecoder.py`  wird verwendet, um die Integrität der empfangenen Daten zu überprüfen.
-
-## Nutzung auf TI-nspire CX CAS
-
-1. Laden Sie die `.py`-Dateien und `.tns`-Dateien aus dem Repository herunter.
-2. Übertragen Sie diese Dateien mithilfe der TI-nspire CX CAS Student Software auf Ihren Taschenrechner.
-3. Öffnen Sie die Dateien auf dem Taschenrechner, um die Skripte auszuführen.
-
-Für weitere Details zur Nutzung und Anpassung der Skripte, siehe die Kommentare im Code.
+## Detailed Calculation Output
+The crcEncoder.py script not only outputs the Transmitted Value but also shows the entire solution path of the binary polynomial division. This includes each step of the division, the XOR operations, and the calculated remainder. This detailed output helps to better understand and follow the CRC encoding process.
