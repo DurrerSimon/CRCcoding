@@ -20,9 +20,8 @@ For more details on the use and customization of the scripts, see the comments i
 ### Detailed Calculation Output
 The crcEncoder.py script not only outputs the Transmitted Value but also shows the entire solution path of the binary polynomial division. This includes each step of the division, the XOR operations, and the calculated remainder. This detailed output helps to better understand and follow the CRC encoding process.
 
-#Author:
-@brodbeckleon
-@DurrerSimon
+# Credit to for supporting:
+https://github.com/brodbeckleon
 
 ### Example
 
