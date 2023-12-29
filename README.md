@@ -6,6 +6,10 @@ Dieses Repository enthält Python-Skripte zur Durchführung der CRC (Cyclic Redu
 
 `crcEncoder.py` führt eine CRC-Kodierung auf binären Daten durch. Es dividiert die Daten durch ein Generatorpolynom und fügt die resultierende CRC-Prüfsumme an die Originaldaten an.
 
+## Detaillierte Ausgabe der Berechnung
+
+Das Skript `crcEncoder.py` gibt nicht nur den Transmitted Value aus, sondern zeigt auch den gesamten Lösungsweg der binären Polynomdivision. Dies umfasst jeden Schritt der Division, die XOR-Operationen und den berechneten Rest. Diese detaillierte Ausgabe hilft dabei, den Prozess der CRC-Kodierung besser zu verstehen und zu verfolgen.
+
 ### Anpassung
 
 - Ändern Sie `val1` für die zu kodierenden Daten.
